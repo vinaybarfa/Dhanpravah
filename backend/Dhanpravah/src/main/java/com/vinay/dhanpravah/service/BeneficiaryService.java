@@ -1,0 +1,4 @@
+package com.vinay.dhanpravah.service;
+
+public class BeneficiaryService {
+}
