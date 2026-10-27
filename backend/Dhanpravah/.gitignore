@@ -1,0 +1,78 @@
+# ==============================
+# Java / Spring Boot Backend
+# ==============================
+HELP.md
+**/target/
+.mvn/wrapper/maven-wrapper.jar
+
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# ==============================
+# Frontend (React / Vite)
+# ==============================
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# ==============================
+# Environment and Secrets
+# ==============================
+.env
+.env.*
+!.env.example
+**/application-local.yml
+**/application-local.yaml
+**/application-local.properties
+
+# ==============================
+# Spring Tool Suite
+# ==============================
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache/
+
+# ==============================
+# IntelliJ IDEA
+# ==============================
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# ==============================
+# NetBeans
+# ==============================
+/nbproject/private/
+/nbbuild/
+/nbdist/
+/.nb-gradle/
+
+# ==============================
+# Build Outputs
+# ==============================
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# ==============================
+# VS Code
+# ==============================
+.vscode/
+
+# ==============================
+# Operating System
+# ==============================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==============================
+# Logs
+# ==============================
+*.log
+
