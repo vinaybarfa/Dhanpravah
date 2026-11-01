@@ -1,3 +1,30 @@
+server:
+  port: ${PORT:8080}
+  address: 0.0.0.0
+  error.include-message: never
+cors:
+  allowed-origins: ${CORS_ALLOWED_ORIGINS}
+
 spring:
   application:
     name: Dhanpravah
+  config:
+    import: optional:file:../.env[.properties]
+  datasource:
+    url: ${DATASOURCE_URL}
+    password: ${DATASOURCE_PASSWORD}
+    username: ${DATASOURCE_USERNAME}
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+  flyway:
+    enabled: true
+  jackson:
+    default-property-inclusion: NON_NULL
+
+security:
+  jwt:
+    secret: ${DHANPRAVAH_JWT_SECRET:change-this-development-secret-to-a-random-32-byte-value}
+    expiry: PT30M
