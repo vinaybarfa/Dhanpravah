@@ -11,6 +11,7 @@ import java.util.UUID;
 @Table(name = "user_notification")
 @Data
 @Builder
+
 public class UserNotification {
 
     @Id

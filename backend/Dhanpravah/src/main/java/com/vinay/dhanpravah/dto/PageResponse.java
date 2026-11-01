@@ -1,7 +1,10 @@
 package com.vinay.dhanpravah.dto;
 
+import lombok.Builder;
+
 import java.util.List;
 
+@Builder
 public record PageResponse<T>(
         List<T> content,
         int page,

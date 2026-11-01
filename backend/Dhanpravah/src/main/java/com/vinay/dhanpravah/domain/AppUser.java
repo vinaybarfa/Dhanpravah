@@ -39,4 +39,9 @@ public class AppUser {
     @Column(name = "created_at", nullable = false, updatable = false)
     private Instant createdAt = Instant.now();
 
+    public void updatePassword(Object hash) {
+    }
+
+    public void updateProfile(String trim, String trim1) {
+    }
 }

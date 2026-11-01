@@ -29,7 +29,7 @@ public class TransactionController {
     @ResponseStatus(HttpStatus.CREATED)
     @PreAuthorize("#userId.toString() == authentication.name")
     public TransferResponse transferToAccount(
-            @PathVariable Long userId, @Valid @RequestBody DirectTransferRequest directTransferRequest
+            @PathVariable Long userId, @Valid @RequestBody DirectTransferRequest request
     ) {
         return paymentService.transferToAccount(userId, request);
     }

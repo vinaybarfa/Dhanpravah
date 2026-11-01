@@ -51,4 +51,13 @@ public class PaymentTransaction {
 
     @Column(name = "created_at", nullable = false, updatable = false)
     private Instant createdAt = Instant.now();
+
+    public void flag(String s, String high) {
+    }
+
+    public void approve() {
+    }
+
+    public void reject(String reason) {
+    }
 }

@@ -22,6 +22,7 @@ public record AccountResponse(
         String holderName
 ) {
 
+
     public static AccountResponse from(Account account) {
         return new AccountResponse(
                 account.getId(),
